@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday Roshan</title>
+    <style>
+        * {
+            transition: all 0.2s ease-in-out;
+        }
+
+        body {
+            background: #12192c;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #DCE35B;
+        }
+
+        .card {
+            background: #12192c;
+            border-radius: 30px;
+            height: 85vh;
+            width: 80vw;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            overflow: hidden;
+            color: #DCE35B;
+            position: relative;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .card {
+                flex-direction: row-reverse;
+            }
+
+            .card img.birthday {
+                width: 60%;
+                max-width: 50vw;
+                max-height: unset;
+                border-radius: 30px;
+            }
+        }
+
+        @media only screen and (max-height: 640px) {
+            .card {
+                flex-direction: row-reverse;
+            }
+
+            .card img.birthday {
+                width: 100%;
+                max-width: 50vw;
+                max-height: unset;
+            }
+        }
+
+        img.birthday {
+            max-height: 40vh;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .text {
+            padding: 3em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .text h1 {
+            font-family: cursive;
+            font-size: 40px;
+            position: relative;
+            z-index: 2;
+            background: rgba(18, 25, 44, 0.7); /* Adjust background color as needed */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .wishing {
+            position: absolute;
+            top: 1%; /* Adjust the position as needed */
+            left: 15%;
+            transform: translateX(-40%);
+            width: 100px;
+            height: 100px;
+            background-image: url('https://github.com/Sujaltalreja04/Roshan-Birthday/blob/main/Screenshot%202024-01-04%20205049.png?raw=true');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            animation: floatAnimation 5s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        @keyframes floatAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+       <div class="card">
+        <div class="wishing"></div>
+            <img src="https://cdn.pixabay.com/photo/2020/10/06/21/54/cake-5633461__480.png" alt="birthday" class="birthday">
+
+        <div class="text">
+         <h1>Happy Birthday Roshan!</h1> 
+         <p>Wishing you a day filled with joy and laughter.</p>
+            <p>May this year bring you success and happiness.</p>
+            <p>Best wishes from us!</p>
+        </div>
+        <div class="space"></div>
+    </div>
+</body>
+
+</html>
